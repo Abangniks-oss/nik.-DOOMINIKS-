@@ -4,61 +4,177 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>DoomNiks Paradise | Staff Application</title>
+<title>Doominiks Paradise</title>
+<title>Niks|Founder of Community</title>
 
-<link rel="stylesheet" href="style.css">
+<style>
 
-<script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: radial-gradient(circle at top,#2a0000,#000000);
+    color:white;
+}
 
+/* Logo */
+
+.logo{
+    text-align:center;
+    padding:40px 20px;
+}
+
+.logo img{
+    width:420px;
+    max-width:90%;
+}
+
+/* Container */
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* Panel Grid */
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+/* Panel Style */
+
+.panel{
+    background:linear-gradient(145deg,#2a0000,#0a0000);
+    border:1px solid #ff0000;
+    border-radius:14px;
+    padding:30px;
+    transition:0.3s;
+    box-shadow:0 0 20px rgba(255,0,0,0.25);
+}
+
+.panel:hover{
+    transform:translateY(-6px);
+    box-shadow:0 0 35px rgba(255,0,0,0.6);
+}
+
+/* Panel Title */
+
+.panel h2{
+    margin-top:0;
+    color:#ff3b3b;
+}
+
+/* Panel Text */
+
+.panel p{
+    opacity:0.9;
+    line-height:1.6;
+}
+
+/* Button */
+
+.btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:10px 18px;
+    background:#ff0000;
+    color:white;
+    text-decoration:none;
+    border-radius:6px;
+    font-weight:bold;
+    transition:0.2s;
+}
+
+.btn:hover{
+    background:#ff3d3d;
+}
+
+/* Footer */
+
+footer{
+    text-align:center;
+    padding:30px;
+    margin-top:50px;
+    opacity:0.7;
+}
+
+</style>
 </head>
+
 
 <body>
 
-<div id="loading">
-<h1>Loading...</h1>
-</div>
-
-<div id="particles"></div>
-
-<nav>
-
+<!-- Logo -->
 <div class="logo">
-<img src="logo.png">
+<img src="logo.png" alt="Doomniks Paradise Logo">
 </div>
 
-<ul>
-<li>Home</li>
-<li>Application</li>
-<li>Community</li>
-</ul>
 
-</nav>
+<div class="container">
 
-<section class="panel">
+<div class="grid">
 
-<h1>Staff Application</h1>
+<!-- TikTok Panel -->
 
-<form id="form">
+<div class="panel">
+<h2>TikTok</h2>
+<p>
+Ikuti update terbaru dari komunitas Doominiks Paradise melalui TikTok.
+Berisi konten gameplay, event komunitas, dan update map Roblox terbaru.
+</p>
+<a href="https://www.tiktok.com/@nikstry_?_r=1&_t=ZS-94XdXLEC1cy" class="btn">Kunjungi TikTok</a>
+</div>
 
-<label>Apa kamu bisa dipercayai tugas ini?</label>
-<input type="text" id="q1" required>
 
-<label>Apa kamu yakin bisa berkontribusi dengan baik?</label>
-<input type="text" id="q2" required>
+<!-- Discord Panel -->
 
-<label>Apa saja yang kamu ketahui tentang menjadi staff/admin?</label>
-<textarea id="q3" required></textarea>
+<div class="panel">
+<h2>Discord</h2>
+<p>
+Bergabung dengan server Discord resmi untuk berdiskusi,
+mencari teman bermain, mendapatkan pengumuman event,
+dan berbicara langsung dengan komunitas.
+</p>
+<a href="https://discord.gg/yy7EecdDVY" class="btn">Masuk Discord</a>
+</div>
 
-<label>Apa alasan kamu mau bergabung dengan tim kami?</label>
-<input type="text" id="q4" required>
 
-<button type="submit">Submit Application</button>
+<!-- Roblox Map Panel -->
 
-</form>
+<div class="panel">
+<h2>Roblox Map(Doominiks Island)</h2>
+<p>
+Mainkan map Doominiks Island di Roblox resmi dari Doominiks Paradise.
+Temukan berbagai fitur, action, parkour, jelajah, serta mendaki keren dengan
+teman kalian
+</p>
+<a href="https://www.roblox.com/share?code=99ed9ce3c4536a4d8cc03434928ca1df&type=ExperienceDetails&stamp=1773048887806" class="btn">Mainkan Map</a>
+</div>
 
-</section>
 
-<script src="script.js"></script>
+<!-- Pengajuan Panel -->
+
+<div class="panel">
+<h2>Staff Application-(coomingsoon)</h2>
+<p>
+Ajukan permohonan untuk bergabung sebagai staff,
+moderator, atau partner komunitas Doominiks Paradise.
+Semua pengajuan akan ditinjau oleh tim kami.
+</p>
+<a href="https://abangniks-oss.github.io/dooms.dashboard/" class="btn">Ajukan Sekarang</a>
+</div>
+
+</div>
+
+</div>
+
+
+<footer>
+© 2017 Doominiks Paradise Community
+</footer>
 
 </body>
 </html>
